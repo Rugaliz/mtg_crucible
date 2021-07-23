@@ -1,1 +1,2 @@
-# mtg_crucible
+# MTG Crucible
+A simple lifecounter for mtg.

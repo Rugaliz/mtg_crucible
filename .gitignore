@@ -1,0 +1,9 @@
+/mtg_cucible/gradle
+/mtg_cucible/.gradle
+/mtg_cucible/.idea
+mtg_crucible/build.gradle
+/mtg_crucible/gradle.properties
+/mtg_crucible/gradle/
+/mtg_crucible/gradlew
+/mtg_crucible/gradlew.bat
+/mtg_crucible/settings.gradle
