@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#1d2021">
 
     <TextView
         android:id="@+id/player2_life"
@@ -15,7 +16,9 @@
         android:rotationX="180"
         android:rotationY="180"
         android:textAlignment="center"
-        android:textSize="45sp"
+        android:textColor="#2f7a58"
+        android:textColorHint="#2f7a58"
+        android:textSize="65sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,18 +31,20 @@
         android:gravity="center"
         android:hint="40"
         android:textAlignment="center"
-        android:textSize="45sp"
+        android:textColor="#2f7a58"
+        android:textColorHint="#2f7a58"
+        android:textSize="65sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/divider"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="1dp"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toTopOf="@+id/player1_life"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/player2_life" />
 
@@ -84,12 +89,12 @@
         android:layout_width="60dp"
         android:layout_height="40dp"
         android:layout_marginStart="55dp"
-        android:layout_marginBottom="432dp"
+        android:layout_marginTop="260dp"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/player2_life"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/player1_life_increase"
@@ -105,11 +110,11 @@
         android:id="@+id/player2_life_decrese"
         android:layout_width="60dp"
         android:layout_height="40dp"
+        android:layout_marginTop="260dp"
         android:layout_marginEnd="55dp"
-        android:layout_marginBottom="432dp"
         android:text="-"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.931"
-        app:layout_constraintStart_toEndOf="@+id/player2_life" />
+        app:layout_constraintStart_toEndOf="@+id/player2_life"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        try // hide top bar
+        {
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
 
         btPlayer1Reset = findViewById(R.id.player1_reset);
         btPlayer1LifeIncrease = findViewById(R.id.player1_life_increase);
