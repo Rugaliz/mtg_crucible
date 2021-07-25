@@ -8,9 +8,9 @@
 
     <TextView
         android:id="@+id/player2_life"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="230dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="150dp"
         android:gravity="center"
         android:hint="40"
         android:rotationX="180"
@@ -18,22 +18,22 @@
         android:textAlignment="center"
         android:textColor="#2f7a58"
         android:textColorHint="#2f7a58"
-        android:textSize="65sp"
+        android:textSize="90sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/player1_life"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="230dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="150dp"
         android:gravity="center"
         android:hint="40"
         android:textAlignment="center"
         android:textColor="#2f7a58"
         android:textColorHint="#2f7a58"
-        android:textSize="65sp"
+        android:textSize="90sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -49,48 +49,30 @@
         app:layout_constraintTop_toBottomOf="@+id/player2_life" />
 
     <Button
-        android:id="@+id/player1_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="150dp"
-        android:alpha="50"
-        android:text="Reset"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player1_life" />
-
-    <Button
-        android:id="@+id/player2_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:alpha="50"
-        android:rotationX="180"
-        android:rotationY="180"
-        android:text="Reset"
-        app:layout_constraintBottom_toTopOf="@+id/player2_life"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/player1_life_decrease"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginStart="55dp"
-        android:layout_marginBottom="260dp"
+        android:layout_marginBottom="195dp"
+        android:alpha="10"
         android:text="-"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textDirection="inherit"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/player1_life"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/player2_life_increse"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="195dp"
+        android:alpha="10"
         android:text="+"
+        android:textSize="40sp"
         app:layout_constraintEnd_toStartOf="@+id/player2_life"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,23 +80,88 @@
 
     <Button
         android:id="@+id/player1_life_increase"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginEnd="55dp"
-        android:layout_marginBottom="260dp"
+        android:layout_marginBottom="195dp"
+        android:alpha="10"
         android:text="+"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/player1_life" />
 
     <Button
         android:id="@+id/player2_life_decrese"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="260dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="195dp"
         android:layout_marginEnd="55dp"
+        android:alpha="10"
         android:text="-"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toEndOf="@+id/player2_life"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/setDefault20"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="35dp"
+        android:alpha="10"
+        android:gravity="center"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="Set:20"
+        android:textAlignment="center"
+        android:textDirection="inherit"
+        android:textSize="16sp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/setDefault25"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="35dp"
+        android:alpha="10"
+        android:gravity="center"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="Set:25"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/setDefault40"
+        app:layout_constraintStart_toEndOf="@+id/setDefault20" />
+
+    <Button
+        android:id="@+id/setDefault40"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="35dp"
+        android:alpha="10"
+        android:gravity="center"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="Set:40"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
